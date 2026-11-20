@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Mouse Jiggler</title>
+    <meta name="description"
+        content="Privacy Policy for Mouse Jiggler (com.brownydoglabs.mousemover) by Browny Dog Labs - 100% on-device operation, zero personal data collection, and full privacy transparency.">
+    <style>
+        :root {
+            --primary: #06b6d4;
+            --primary-dark: #0891b2;
+            --surface: #ffffff;
+            --background: #f8fafc;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+            --card-bg: #ffffff;
+            --badge-bg: #ecfeff;
+            --badge-text: #0e7490;
+            --tag-safe: #dcfce7;
+            --tag-safe-text: #166534;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #22d3ee;
+                --primary-dark: #06b6d4;
+                --surface: #0f172a;
+                --background: #020617;
+                --text-main: #f8fafc;
+                --text-muted: #94a3b8;
+                --border: #1e293b;
+                --card-bg: #0f172a;
+                --badge-bg: #083344;
+                --badge-text: #67e8f9;
+                --tag-safe: #064e3b;
+                --tag-safe-text: #86efac;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 32px 0 24px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--badge-bg);
+            color: var(--badge-text);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .highlight-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .highlight-icon {
+            font-size: 1.75rem;
+            margin-bottom: 8px;
+        }
+
+        .highlight-card h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .highlight-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--text-muted);
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 24px;
+            margin-bottom: 12px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .note-box {
+            background-color: var(--badge-bg);
+            border-left: 4px solid var(--primary);
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 14px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.9rem;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: var(--badge-bg);
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 0 16px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 32px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-badge">🖱️ Mouse Jiggler</div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">100% on-device operation, zero personal data collection, and full privacy transparency.</p>
+            <span class="last-updated">Last Updated: November 2026</span>
+        </header>
+
+        <div class="highlights">
+            <div class="highlight-card">
+                <div class="highlight-icon">🔒</div>
+                <h3>100% Local &amp; Air-Gapped</h3>
+                <p>Operates entirely through on-screen optical patterns and physical haptic micro-vibrations.</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🚫</div>
+                <h3>Zero Telemetry on Work</h3>
+                <p>No monitoring of your computer, mouse, keystrokes, company networks, or working habits.</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">👤</div>
+                <h3>No Accounts Required</h3>
+                <p>No email, password, phone number, or cloud sign-in required to use the application.</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🛡️</div>
+                <h3>PRO Privacy Protection</h3>
+                <p>PRO users enjoy a completely ad-free experience with zero ad trackers or network calls active.</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>1. Overview &amp; Core Philosophy</h2>
+            <p>
+                <strong>Mouse Jiggler</strong> (Package: <code>com.brownydoglabs.mousemover</code>), developed and published by <strong>Browny Dog Labs</strong>, is built upon an uncompromising <strong>Local-First and Privacy-by-Design</strong> architecture.
+            </p>
+            <p>
+                The application simulates mouse movement by placing a physical optical, laser, or infrared computer mouse directly onto your mobile device's screen. The app uses high-contrast geometric animations and optional gentle haptic vibrations to keep the mouse sensor active and prevent your computer from entering standby or sleep mode.
+            </p>
+            <p>
+                <strong>No direct connection to your computer:</strong> Mouse Jiggler is completely air-gapped from your PC, laptop, or employer's network. It does not install drivers, does not connect via USB, Bluetooth, or Wi-Fi to your computer, and has zero visibility into your computer's files, keystrokes, active programs, or network traffic.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Information We Do NOT Collect</h2>
+            <ul>
+                <li><strong>No Personal Identifiers:</strong> We do not ask for or collect names, email addresses, phone numbers, contacts, or user identities.</li>
+                <li><strong>No Computer or Device Telemetry:</strong> We do not track what computer you use, your employer, your presence status, your working hours, or your browsing activities.</li>
+                <li><strong>No Location Data:</strong> The application does not request or access GPS or coarse location permissions (<code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code>).</li>
+                <li><strong>No File, Camera, or Audio Access:</strong> The app does not request access to your files, photos, camera, or microphone.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Local-Only Execution &amp; Device Safety</h2>
+            <p>
+                All animations, movement cycles, rhythm profiles, and vibration sequences are processed locally on your Android device:
+            </p>
+            <ul>
+                <li><strong>Pure Local Rendering:</strong> Dynamic visual patterns (Checkerboard, Zebra Stripes, Turbo Matrix, Red Grid) are drawn directly on-screen in real time using native Android Canvas APIs.</li>
+                <li><strong>Stealth Jitter Mode:</strong> The randomized interval algorithm (&plusmn;3s jitter) runs entirely in local memory to prevent predictable activation cadences.</li>
+                <li><strong>Hardware &amp; OLED Protection:</strong> Target zone shifting and temporary pulse brightness prevent screen burn-in and save power. When in standby or paused, rendering loops are completely halted with zero CPU overhead.</li>
+            </ul>
+            <div class="note-box">
+                <strong>Absolute Device Sovereignty:</strong> At no point during active jiggler operation is an internet connection required to run animations, vibrations, or timers. Core jiggler features can be operated entirely in Airplane Mode.
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Device Permissions Used</h2>
+            <p>The app requests only the minimum set of permissions strictly necessary for its physical operation and license management:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>android.permission.VIBRATE</code></td>
+                        <td>Enables calibrated haptic micro-pulses in Vibration and Hybrid modes to gently nudge physical mouse sensors that do not track on smooth glass.</td>
+                    </tr>
+                    <tr>
+                        <td><code>android.permission.WAKE_LOCK</code></td>
+                        <td>Keeps the screen awake during an active jiggling session, preventing the mobile device itself from sleeping while operating.</td>
+                    </tr>
+                    <tr>
+                        <td><code>android.permission.INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code></td>
+                        <td>Used exclusively for in-app billing verification (RevenueCat / Google Play Store) and serving ads (Google AdMob) in the free tier.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>5. Third-Party Services &amp; Advertising</h2>
+            <p>To support ongoing development and offer a functional free tier, the application integrates standard, reputable third-party SDKs:</p>
+            
+            <h3>A. Google AdMob &amp; User Messaging Platform (UMP)</h3>
+            <p>
+                In the free version of the application, banner and occasional interstitial ads are delivered via <strong>Google AdMob</strong>.
+            </p>
+            <ul>
+                <li><strong>GDPR &amp; EU User Consent:</strong> For users located in the European Economic Area (EEA) and the UK, the app uses Google's certified <strong>User Messaging Platform (UMP)</strong> SDK to collect and manage privacy consent choices in compliance with GDPR and ePrivacy directives.</li>
+                <li><strong>Ad Identifiers:</strong> Google AdMob may process device advertising identifiers (such as the Google Advertising ID), IP addresses, and diagnostic performance metrics in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+                <li><strong>100% Ad-Free in PRO:</strong> When upgrading to Mouse Jiggler PRO, Google AdMob is completely deactivated: no banners, no interstitials, and no ad network requests are made.</li>
+            </ul>
+
+            <h3 style="margin-top: 16px;">B. RevenueCat &amp; Google Play In-App Billing</h3>
+            <p>
+                We use <strong>RevenueCat</strong> to manage in-app subscriptions and lifetime PRO licenses through the Google Play Store.
+            </p>
+            <ul>
+                <li>RevenueCat processes anonymous app user identifiers and receipt validation tokens to verify your PRO entitlement.</li>
+                <li>No credit card, banking, or financial billing information is ever seen or collected by the developer; all payment transactions are securely handled directly by Google Play.</li>
+                <li>For more details, review <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Free Tier vs. PRO License</h2>
+            <ul>
+                <li><strong>Free Tier:</strong> Includes essential movement modes (Display &amp; Vibration), preset timers (15m, 30m), and standard speeds. Displays non-intrusive ads (banner and occasional session interstitials).</li>
+                <li><strong>PRO License (Lifetime or Monthly Subscription):</strong> Unlocks unlimited session duration (&infin;), Stealth Mode (&plusmn;3s random interval), 4x Ultra speed, Hybrid operation, exclusive patterns, and <strong>permanently removes all advertisements and ad-related network traffic</strong>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Data Retention &amp; Deletion</h2>
+            <ul>
+                <li><strong>App Preferences:</strong> Your selected mode, rhythm profile, pattern, and PRO license status are saved locally on your device via Android DataStore / SharedPreferences.</li>
+                <li><strong>No Cloud Accounts:</strong> Because there are no user accounts, passwords, or centralized cloud databases, there is no remote profile to delete.</li>
+                <li><strong>Complete Data Erasure:</strong> Uninstalling the application immediately and permanently removes all stored preferences and cache files from your device.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>8. Children's Privacy</h2>
+            <p>
+                Mouse Jiggler is a general productivity utility and is not directed to children under the age of 13 (or under 16 in the European Union). We do not knowingly collect any personal information from children.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>
+                We may periodically update this Privacy Policy to reflect application updates or regulatory requirements. Any modifications will be posted directly to this page with an updated "Last Updated" date.
+            </p>
+        </section>
+
+        <section>
+            <h2>10. Developer Contact &amp; Support</h2>
+            <p>
+                If you have questions, feedback, or inquiries regarding this Privacy Policy or your privacy while using Mouse Jiggler, please contact:
+            </p>
+            <p>
+                <strong>Developer / Publisher:</strong> Browny Dog Labs<br>
+                <strong>Application Name:</strong> Mouse Jiggler<br>
+                <strong>Package ID:</strong> <code>com.brownydoglabs.mousemover</code><br>
+                <strong>Website:</strong> <a href="https://brownydoglabs.com" target="_blank" rel="noopener">brownydoglabs.com</a><br>
+                <strong>Support Contact:</strong> <a href="mailto:support@brownydoglabs.com">support@brownydoglabs.com</a>
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Mouse Jiggler (Browny Dog Labs). All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
