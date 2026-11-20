@@ -226,7 +226,8 @@
         <header>
             <div class="logo-badge">🖱️ Mouse Jiggler</div>
             <h1>Privacy Policy</h1>
-            <p class="subtitle">100% on-device operation, zero personal data collection, and full privacy transparency.</p>
+            <p class="subtitle">100% on-device operation, zero personal data collection, and full privacy transparency.
+            </p>
             <span class="last-updated">Last Updated: November 2026</span>
         </header>
 
@@ -256,44 +257,64 @@
         <section>
             <h2>1. Overview &amp; Core Philosophy</h2>
             <p>
-                <strong>Mouse Jiggler</strong> (Package: <code>com.brownydoglabs.mousemover</code>), developed and published by <strong>Browny Dog Labs</strong>, is built upon an uncompromising <strong>Local-First and Privacy-by-Design</strong> architecture.
+                <strong>Mouse Jiggler</strong> (Package: <code>com.brownydoglabs.mousemover</code>), developed and
+                published by <strong>Browny Dog Labs</strong>, is built upon an uncompromising <strong>Local-First and
+                    Privacy-by-Design</strong> architecture.
             </p>
             <p>
-                The application simulates mouse movement by placing a physical optical, laser, or infrared computer mouse directly onto your mobile device's screen. The app uses high-contrast geometric animations and optional gentle haptic vibrations to keep the mouse sensor active and prevent your computer from entering standby or sleep mode.
+                The application simulates mouse movement by placing a physical optical, laser, or infrared computer
+                mouse directly onto your mobile device's screen. The app uses high-contrast geometric animations and
+                optional gentle haptic vibrations to keep the mouse sensor active and prevent your computer from
+                entering standby or sleep mode.
             </p>
             <p>
-                <strong>No direct connection to your computer:</strong> Mouse Jiggler is completely air-gapped from your PC, laptop, or employer's network. It does not install drivers, does not connect via USB, Bluetooth, or Wi-Fi to your computer, and has zero visibility into your computer's files, keystrokes, active programs, or network traffic.
+                <strong>No direct connection to your computer:</strong> Mouse Jiggler is completely air-gapped from your
+                PC, laptop, or employer's network. It does not install drivers, does not connect via USB, Bluetooth, or
+                Wi-Fi to your computer, and has zero visibility into your computer's files, keystrokes, active programs,
+                or network traffic.
             </p>
         </section>
 
         <section>
             <h2>2. Information We Do NOT Collect</h2>
             <ul>
-                <li><strong>No Personal Identifiers:</strong> We do not ask for or collect names, email addresses, phone numbers, contacts, or user identities.</li>
-                <li><strong>No Computer or Device Telemetry:</strong> We do not track what computer you use, your employer, your presence status, your working hours, or your browsing activities.</li>
-                <li><strong>No Location Data:</strong> The application does not request or access GPS or coarse location permissions (<code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code>).</li>
-                <li><strong>No File, Camera, or Audio Access:</strong> The app does not request access to your files, photos, camera, or microphone.</li>
+                <li><strong>No Personal Identifiers:</strong> We do not ask for or collect names, email addresses, phone
+                    numbers, contacts, or user identities.</li>
+                <li><strong>No Computer or Device Telemetry:</strong> We do not track what computer you use, your
+                    employer, your presence status, your working hours, or your browsing activities.</li>
+                <li><strong>No Location Data:</strong> The application does not request or access GPS or coarse location
+                    permissions (<code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code>).</li>
+                <li><strong>No File, Camera, or Audio Access:</strong> The app does not request access to your files,
+                    photos, camera, or microphone.</li>
             </ul>
         </section>
 
         <section>
             <h2>3. Local-Only Execution &amp; Device Safety</h2>
             <p>
-                All animations, movement cycles, rhythm profiles, and vibration sequences are processed locally on your Android device:
+                All animations, movement cycles, rhythm profiles, and vibration sequences are processed locally on your
+                Android device:
             </p>
             <ul>
-                <li><strong>Pure Local Rendering:</strong> Dynamic visual patterns (Checkerboard, Zebra Stripes, Turbo Matrix, Red Grid) are drawn directly on-screen in real time using native Android Canvas APIs.</li>
-                <li><strong>Stealth Jitter Mode:</strong> The randomized interval algorithm (&plusmn;3s jitter) runs entirely in local memory to prevent predictable activation cadences.</li>
-                <li><strong>Hardware &amp; OLED Protection:</strong> Target zone shifting and temporary pulse brightness prevent screen burn-in and save power. When in standby or paused, rendering loops are completely halted with zero CPU overhead.</li>
+                <li><strong>Pure Local Rendering:</strong> Dynamic visual patterns (Checkerboard, Zebra Stripes, Turbo
+                    Matrix, Red Grid) are drawn directly on-screen in real time using native Android Canvas APIs.</li>
+                <li><strong>Stealth Jitter Mode:</strong> The randomized interval algorithm (&plusmn;3s jitter) runs
+                    entirely in local memory to prevent predictable activation cadences.</li>
+                <li><strong>Hardware &amp; OLED Protection:</strong> Target zone shifting and temporary pulse brightness
+                    prevent screen burn-in and save power. When in standby or paused, rendering loops are completely
+                    halted with zero CPU overhead.</li>
             </ul>
             <div class="note-box">
-                <strong>Absolute Device Sovereignty:</strong> At no point during active jiggler operation is an internet connection required to run animations, vibrations, or timers. Core jiggler features can be operated entirely in Airplane Mode.
+                <strong>Absolute Device Sovereignty:</strong> At no point during active jiggler operation is an internet
+                connection required to run animations, vibrations, or timers. Core jiggler features can be operated
+                entirely in Airplane Mode.
             </div>
         </section>
 
         <section>
             <h2>4. Device Permissions Used</h2>
-            <p>The app requests only the minimum set of permissions strictly necessary for its physical operation and license management:</p>
+            <p>The app requests only the minimum set of permissions strictly necessary for its physical operation and
+                license management:</p>
             <table>
                 <thead>
                     <tr>
@@ -304,15 +325,18 @@
                 <tbody>
                     <tr>
                         <td><code>android.permission.VIBRATE</code></td>
-                        <td>Enables calibrated haptic micro-pulses in Vibration and Hybrid modes to gently nudge physical mouse sensors that do not track on smooth glass.</td>
+                        <td>Enables calibrated haptic micro-pulses in Vibration and Hybrid modes to gently nudge
+                            physical mouse sensors that do not track on smooth glass.</td>
                     </tr>
                     <tr>
                         <td><code>android.permission.WAKE_LOCK</code></td>
-                        <td>Keeps the screen awake during an active jiggling session, preventing the mobile device itself from sleeping while operating.</td>
+                        <td>Keeps the screen awake during an active jiggling session, preventing the mobile device
+                            itself from sleeping while operating.</td>
                     </tr>
                     <tr>
                         <td><code>android.permission.INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code></td>
-                        <td>Used exclusively for in-app billing verification (RevenueCat / Google Play Store) and serving ads (Google AdMob) in the free tier.</td>
+                        <td>Used exclusively for in-app billing verification (RevenueCat / Google Play Store) and
+                            serving ads (Google AdMob) in the free tier.</td>
                     </tr>
                 </tbody>
             </table>
@@ -320,71 +344,96 @@
 
         <section>
             <h2>5. Third-Party Services &amp; Advertising</h2>
-            <p>To support ongoing development and offer a functional free tier, the application integrates standard, reputable third-party SDKs:</p>
-            
+            <p>To support ongoing development and offer a functional free tier, the application integrates standard,
+                reputable third-party SDKs:</p>
+
             <h3>A. Google AdMob &amp; User Messaging Platform (UMP)</h3>
             <p>
-                In the free version of the application, banner and occasional interstitial ads are delivered via <strong>Google AdMob</strong>.
+                In the free version of the application, banner and occasional interstitial ads are delivered via
+                <strong>Google AdMob</strong>.
             </p>
             <ul>
-                <li><strong>GDPR &amp; EU User Consent:</strong> For users located in the European Economic Area (EEA) and the UK, the app uses Google's certified <strong>User Messaging Platform (UMP)</strong> SDK to collect and manage privacy consent choices in compliance with GDPR and ePrivacy directives.</li>
-                <li><strong>Ad Identifiers:</strong> Google AdMob may process device advertising identifiers (such as the Google Advertising ID), IP addresses, and diagnostic performance metrics in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
-                <li><strong>100% Ad-Free in PRO:</strong> When upgrading to Mouse Jiggler PRO, Google AdMob is completely deactivated: no banners, no interstitials, and no ad network requests are made.</li>
+                <li><strong>GDPR &amp; EU User Consent:</strong> For users located in the European Economic Area (EEA)
+                    and the UK, the app uses Google's certified <strong>User Messaging Platform (UMP)</strong> SDK to
+                    collect and manage privacy consent choices in compliance with GDPR and ePrivacy directives.</li>
+                <li><strong>Ad Identifiers:</strong> Google AdMob may process device advertising identifiers (such as
+                    the Google Advertising ID), IP addresses, and diagnostic performance metrics in accordance with <a
+                        href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy
+                        Policy</a>.</li>
+                <li><strong>100% Ad-Free in PRO:</strong> When upgrading to Mouse Jiggler PRO, Google AdMob is
+                    completely deactivated: no banners, no interstitials, and no ad network requests are made.</li>
             </ul>
 
             <h3 style="margin-top: 16px;">B. RevenueCat &amp; Google Play In-App Billing</h3>
             <p>
-                We use <strong>RevenueCat</strong> to manage in-app subscriptions and lifetime PRO licenses through the Google Play Store.
+                We use <strong>RevenueCat</strong> to manage in-app subscriptions and lifetime PRO licenses through the
+                Google Play Store.
             </p>
             <ul>
-                <li>RevenueCat processes anonymous app user identifiers and receipt validation tokens to verify your PRO entitlement.</li>
-                <li>No credit card, banking, or financial billing information is ever seen or collected by the developer; all payment transactions are securely handled directly by Google Play.</li>
-                <li>For more details, review <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.</li>
+                <li>RevenueCat processes anonymous app user identifiers and receipt validation tokens to verify your PRO
+                    entitlement.</li>
+                <li>No credit card, banking, or financial billing information is ever seen or collected by the
+                    developer; all payment transactions are securely handled directly by Google Play.</li>
+                <li>For more details, review <a href="https://www.revenuecat.com/privacy" target="_blank"
+                        rel="noopener">RevenueCat's Privacy Policy</a>.</li>
             </ul>
         </section>
 
         <section>
             <h2>6. Free Tier vs. PRO License</h2>
             <ul>
-                <li><strong>Free Tier:</strong> Includes essential movement modes (Display &amp; Vibration), preset timers (15m, 30m), and standard speeds. Displays non-intrusive ads (banner and occasional session interstitials).</li>
-                <li><strong>PRO License (Lifetime or Monthly Subscription):</strong> Unlocks unlimited session duration (&infin;), Stealth Mode (&plusmn;3s random interval), 4x Ultra speed, Hybrid operation, exclusive patterns, and <strong>permanently removes all advertisements and ad-related network traffic</strong>.</li>
+                <li><strong>Free Tier:</strong> Includes essential movement modes (Display &amp; Vibration), preset
+                    timers (15m, 30m), and standard speeds. Displays non-intrusive ads (banner and occasional session
+                    interstitials).</li>
+                <li><strong>PRO License (Lifetime or Monthly Subscription):</strong> Unlocks unlimited session duration
+                    (&infin;), Stealth Mode (&plusmn;3s random interval), 4x Ultra speed, Hybrid operation, exclusive
+                    patterns, and <strong>permanently removes all advertisements and ad-related network
+                        traffic</strong>.</li>
             </ul>
         </section>
 
         <section>
             <h2>7. Data Retention &amp; Deletion</h2>
             <ul>
-                <li><strong>App Preferences:</strong> Your selected mode, rhythm profile, pattern, and PRO license status are saved locally on your device via Android DataStore / SharedPreferences.</li>
-                <li><strong>No Cloud Accounts:</strong> Because there are no user accounts, passwords, or centralized cloud databases, there is no remote profile to delete.</li>
-                <li><strong>Complete Data Erasure:</strong> Uninstalling the application immediately and permanently removes all stored preferences and cache files from your device.</li>
+                <li><strong>App Preferences:</strong> Your selected mode, rhythm profile, pattern, and PRO license
+                    status are saved locally on your device via Android DataStore / SharedPreferences.</li>
+                <li><strong>No Cloud Accounts:</strong> Because there are no user accounts, passwords, or centralized
+                    cloud databases, there is no remote profile to delete.</li>
+                <li><strong>Complete Data Erasure:</strong> Uninstalling the application immediately and permanently
+                    removes all stored preferences and cache files from your device.</li>
             </ul>
         </section>
 
         <section>
             <h2>8. Children's Privacy</h2>
             <p>
-                Mouse Jiggler is a general productivity utility and is not directed to children under the age of 13 (or under 16 in the European Union). We do not knowingly collect any personal information from children.
+                Mouse Jiggler is a general productivity utility and is not directed to children under the age of 13 (or
+                under 16 in the European Union). We do not knowingly collect any personal information from children.
             </p>
         </section>
 
         <section>
             <h2>9. Changes to This Privacy Policy</h2>
             <p>
-                We may periodically update this Privacy Policy to reflect application updates or regulatory requirements. Any modifications will be posted directly to this page with an updated "Last Updated" date.
+                We may periodically update this Privacy Policy to reflect application updates or regulatory
+                requirements. Any modifications will be posted directly to this page with an updated "Last Updated"
+                date.
             </p>
         </section>
 
         <section>
             <h2>10. Developer Contact &amp; Support</h2>
             <p>
-                If you have questions, feedback, or inquiries regarding this Privacy Policy or your privacy while using Mouse Jiggler, please contact:
+                If you have questions, feedback, or inquiries regarding this Privacy Policy or your privacy while using
+                Mouse Jiggler, please contact:
             </p>
             <p>
                 <strong>Developer / Publisher:</strong> Browny Dog Labs<br>
                 <strong>Application Name:</strong> Mouse Jiggler<br>
                 <strong>Package ID:</strong> <code>com.brownydoglabs.mousemover</code><br>
-                <strong>Website:</strong> <a href="https://brownydoglabs.com" target="_blank" rel="noopener">brownydoglabs.com</a><br>
-                <strong>Support Contact:</strong> <a href="mailto:support@brownydoglabs.com">support@brownydoglabs.com</a>
+                <strong>Website:</strong> <a href="https://https://github.com/brownydoglabs" target="_blank"
+                    rel="noopener">https://github.com/brownydoglabs</a><br>
+                <strong>Support Contact:</strong> <a href="mailto:brownydoglabs@gmail.com">brownydoglabs@gmail.com</a>
             </p>
         </section>
 
